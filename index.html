@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="slide-animation"lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Michael Castro</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Michael Castro</h1>
-        <section id="about">
-            <h2>About</h2>
-            <p>I am interested in learning about web devleopemnt 
-                so I can make a good living and support my family.</p>
+        <header>
+            <a href=index.html>Michael Castro</a>
+            
+        </header>
+        <hr>
+
+        <section id="about-section">
+            <div class="about-text-container">
+                <h1 class="hero-text">
+                    I am <br><span class="my-name">Michael Castro</span>
+                </h1>
+                <p class="about-description">Aspiring Web Developer.</p>
+                <img src="images/snowboarding-photo.jpg" class= "my-picture" alt="Image of Michael Castro Smiling in the snow, with a snow board in his hand" srcset="">
+            </div>
         </section>
-        <section id="experience">
+        <hr>
+
+        <section id="projects">
             <h2>Experience</h2>    
-            <ul>
-                <li><a href="https://codeblue709.github.io/FetchMates/">Fetchmate Website</a></li>
-                <li><a href ="https://codeblue709.github.io/Garden-Website/">Garden Website</a></li>
-                <li><a href="https://codeblue709.github.io/portfolio-website/">Portfolio Website</a></li>
-            </ul>
+
+            <div class="main-project-container">
+                <a href="https://codeblue709.github.io/FetchMates/"><img src="images/FetchMates screenshot 2023-07-30 174123.png" id = "fetchmates"class ="project-img" alt="Picture of my wesbite called FetchMates"></a>
+            </div>
+
+            <div class="wrapper">
+                <div class="project-container">
+                    <a href="https://codeblue709.github.io/Garden-Website/"><img src="images/garden website screenshot.png" class ="project-img" alt="Picture of my gardening website called gardens" ></a>
+                </div>
+
+                <div class="project-container">
+                    <a href=""><img src="images/scoreboard.png"  class ="project-img" alt="Picture of my score board project" ></a>
+                </div>
+            </div>
         </section>
+        <hr>
+
+
         <section id="connect">
             <h2>Connect</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/m1chael_castr0709/">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/michael-castro-52293a266/">LinkedIn</a></li>
-            </ul>
+            <div class="nav-container">
+                <a href="https://www.instagram.com/m1chael_castr0709/" class="link-item" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/michael-castro-52293a266/" class="link-item" target="_blank">LinkedIn</a>
+            </div>
         </section>
     </body>
 </html>
