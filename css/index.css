@@ -1,0 +1,150 @@
+body{
+    margin: 0 200px;
+    color: white;
+    background-color: #1C1B17;
+    font-family: "Yantramanav", sans-serif;
+}
+header{
+    display: flex;
+    gap:90px;
+    margin: 20px 0;
+}
+h2{
+    text-align: center;
+}
+a{
+    color:white;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+
+.nav-links{
+    margin:auto 0 auto auto;
+}
+.link-item{
+   margin:30px 10px;
+}
+.link-item:hover,
+.link-item:active{
+    color: aqua;
+}
+
+/* ABOUT SECTION */
+#about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:100px;
+}
+.about-text-container{
+    padding: 50px;
+}
+
+.hero-text{
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0;
+}
+.about-description{
+    font-size: 20px;
+    margin: 0;
+    
+}
+.my-name{
+    color: aqua;
+    font-weight: 800;
+    text-align: center;
+    display: inline;
+}
+hr{color: aqua;}
+
+.my-picture{
+    width:300px;
+    height: 300px;
+    border-radius: 500px;
+    margin-top:30px;
+}
+
+
+
+/* PROJECTS SECTION */
+#projects{
+    margin: 0;
+}
+.main-project-container{
+    text-align: center;
+    justify-content: center;
+}
+.project-container{
+   display: block;
+   margin: 50px;
+   justify-content: center;
+}
+.site-name{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+.project-img{
+    width:500px;
+    height: 260px;
+    margin: 0;
+
+    /* this is for the hover animation */
+    transition: 0.5s; 
+}
+
+#fetchmates{
+    width:1100px;
+    height:550px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONNECT SECTION  */
+#connect{
+    margin:20px 0;
+}
+
+.nav-container{
+    text-align: center;
+}
+
+/* Animations */
+#slide-animation {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        margin-top: -2%;
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+
+}
+
+.project-img:hover{
+    will-change: transform;
+    z-index: 1;
+    transform: scale(1.10);
+    box-shadow: 0 25px 40px  rgba(0,0,0,.5);
+}
