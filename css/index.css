@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0 200px;
     color: white;
@@ -17,12 +21,16 @@ a{
     list-style: none;
     text-decoration: none;
 }
+a:hover{
+    color: aqua;
+}
 
 ul{
     list-style: none;
     display: block;
     padding: 0;
 }
+
 
 .nav-links{
     margin:auto 0 auto auto;
@@ -35,6 +43,18 @@ ul{
     color: aqua;
 }
 
+
+.nav-link{
+    margin-left: auto;
+    
+}
+
+nav{
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
 /* ABOUT SECTION */
 #about-section{
     display: flex;
@@ -55,7 +75,6 @@ ul{
 .about-description{
     font-size: 20px;
     margin: 0;
-    
 }
 .my-name{
     color: aqua;
