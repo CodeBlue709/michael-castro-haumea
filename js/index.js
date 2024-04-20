@@ -1,4 +1,4 @@
-
+//lesson 13
 const skillsSectiom = document.getElementById("skills")
 const skillsList = document.getElementById("skills-list")
 
