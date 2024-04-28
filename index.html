@@ -62,6 +62,27 @@
         </section>
         <hr>
 
+        <section >
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label for="usersName">Your Name:</label><br>
+                <input type="text" id="usersName" name="usersName" required><br>
+    
+                <label for="usersEmail">Your Email:</label><br>
+                <input type="email" id="usersEmail" name="usersEmail" required><br>
+    
+                <label for="usersMessage">Message:</label><br>
+                <textarea id="usersMessage" name="usersMessage" rows = "5" cols="30"></textarea><br>
+    
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <section id="messages" class="hide-messages-section">
+            <h1>Messages</h1>
+            <ul></ul>
+        </section>
+        <hr>
         <section id="connect">
             <h2>Connect</h2>
             <div class="nav-container">

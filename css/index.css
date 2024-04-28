@@ -9,8 +9,18 @@ body{
     background-color: #1C1B17;
     font-family: "Yantramanav", sans-serif;
 }
-
-
+form{
+    text-align: center;
+}
+#messages{
+    text-align: center;
+}
+#usersMessage{
+    padding: 20px;
+}
+.hide-messages-section{
+    display: none;
+}
 
 
 header{
@@ -169,6 +179,14 @@ hr{color: aqua;}
     transform: scale(1.10);
     box-shadow: 0 25px 40px  rgba(0,0,0,.5);
 }
+
+.submit-btn{
+    padding: 10px;
+    border:1px solid grey;
+    border-radius:100px;
+    background-color: aqua;
+    margin: 10px 0;
+}
 /***************************************************************** Tablet Styling **************************************************************/
 @media only screen and (max-width: 1300px) {
     body{
@@ -324,7 +342,13 @@ hr{color: aqua;}
         transform: scale(1.05);
         box-shadow: 0 25px 40px  rgba(0,0,0,.5);
     }
-    
+    .submit-btn{
+        padding: 10px;
+        border:1px solid grey;
+        border-radius:100px;
+        background-color: aqua;
+        margin: 10px 0;
+    }
   }
 /***************************************************************** Mobile Styling **************************************************************/
 @media only screen and (max-width: 480px) {
@@ -450,5 +474,12 @@ hr{color: aqua;}
     
     .nav-container{
         text-align: center;
+    }
+    .submit-btn{
+        padding: 10px;
+        border:1px solid grey;
+        border-radius:100px;
+        background-color: aqua;
+        margin: 10px 0;
     }
   }
