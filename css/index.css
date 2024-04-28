@@ -271,7 +271,7 @@ hr{color: aqua;}
     .project-img{
         width:500px;
         height:300px;
-        margin: 0;
+        
     
         /* this is for the hover animation */
         transition: 0.5s; 
@@ -423,9 +423,9 @@ hr{color: aqua;}
     }
 
     .project-img{
-        width:400px;
-        height:230px;
-        margin: 0;
+        width:370px;
+        height:200px;
+        
     
         /* this is for the hover animation */
         transition: 0.5s; 
@@ -433,8 +433,8 @@ hr{color: aqua;}
     }
     
     #fetchmates{
-        width:400px;
-        height:250px;
+        width:370px;
+        height:200px;
     }
     
     .wrapper{
