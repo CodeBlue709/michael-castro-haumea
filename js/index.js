@@ -6,8 +6,8 @@ const skills = [ "HTML", "CSS","Javascript"];
 
 for(let i = 0; i < skills.length; i++){
     let skill = document.createElement('li')
-    skill.textContent = `${skills[i]}`
-    skillsList.appendChild(skill)
+    skill.textContent = skills[i];
+    skillsList.appendChild(skill);
 }
 
 
@@ -21,4 +21,48 @@ const footer = document.querySelector('footer')
 const copyright = document.createElement('p')
 copyright.innerHTML = `\u00A9 Michael Castro ${thisYear}`
 footer.appendChild(copyright)
+
+let messageForm = document.querySelector("form[name = 'leave_message']")//selects the form from html
+
+//creates submit form that takes users name, email, & messages.
+messageForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    const form = event.target;//stores the form itself
+
+    let name = form.usersName.value;
+    let usersEmail = form.usersEmail.value;
+    let usersMessage = form.usersMessage.value;
+
+    console.log(form,name, usersEmail)
+
+    let messageSection = document.getElementById("messages");
+    messageSection.classList.toggle("hide-messages-section")
+
+    //when a new list item is added, the hide message class shoudl toggle
+
+    let messageList = messageSection.querySelector('ul');//contains the full list in the message section
+    
+    let newMessage = document.createElement('li')
+
+    newMessage.innerHTML = `
+        <a href="mailto:${usersEmail}">${name}</a>
+        <span>${usersMessage}</span>
+    `
+    messageForm.reset();
+
+    let removeButton = document.createElement('button')
+
+    removeButton.innerText = 'remove'
+    removeButton.type = 'button';
+
+    removeButton.addEventListener('click', function(){
+        const entry = removeButton.parentNode
+        entry.remove();
+    })
+
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+})
+
+
 
