@@ -1,6 +1,7 @@
 //lesson 13
 const skillsSectiom = document.getElementById("skills")
 const skillsList = document.getElementById("skills-list")
+const projectSection = document.getElementById("projects")
 
 const skills = [ "HTML", "CSS","Javascript"];
 
@@ -36,7 +37,7 @@ messageForm.addEventListener("submit", function(event){
     console.log(form,name, usersEmail)
 
     let messageSection = document.getElementById("messages");
-    messageSection.classList.toggle("hide-messages-section")
+   
 
     //when a new list item is added, the hide message class shoudl toggle
 
@@ -65,4 +66,26 @@ messageForm.addEventListener("submit", function(event){
 })
 
 
+//Fetches All of my projects from github and stores them in a list 
+fetch("https://api.github.com/users/CodeBlue709/repos",{
+    method: "GET"
+}).then(res => { //checks to see if fetched link is incorrect
+        if(!res.ok){
+            throw new Error('Oops')
+        }
+        return res.json()
+    })
+.then(repositories => {
+    
+    for(let i = 0; i< repositories.length;i++){
+        let project = document.createElement('li')
+        project.innerText = repositories[i].name;
+
+        projectSection.appendChild(project)
+    }
+}
+     
+    
+)
+.catch(error => console.log(error))
 

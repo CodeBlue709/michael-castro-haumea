@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p{
+    text-align: center;
+}
+
 body{
     margin: 0 200px;
     color: white;
@@ -18,10 +22,10 @@ form{
 #usersMessage{
     padding: 20px;
 }
-.hide-messages-section{
-    display: none;
-}
 
+.center-text{
+    text-align: center;
+}
 
 header{
     display: flex;
