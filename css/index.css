@@ -3,22 +3,30 @@ html {
     scroll-behavior: smooth;
 }
 
-p{
+.align-center{
     text-align: center;
 }
 
+p{
+    margin: 0;
+}
+
 body{
-    margin: 0 200px;
-    color: white;
-    background-color: #1C1B17;
+    margin: 0;
+}
+
+#page-container{
+    color: black;
     font-family: "Yantramanav", sans-serif;
+    background-color: aliceblue;
 }
-form{
-    text-align: center;
+
+
+button:hover{
+    cursor: pointer;
 }
-#messages{
-    text-align: center;
-}
+
+
 #usersMessage{
     padding: 20px;
 }
@@ -32,16 +40,32 @@ header{
     gap:90px;
     margin: 20px 0;
 }
-h2{
+.text-underline{
+    border-bottom: 2px blueviolet solid;
+}
+h2,h3,h4{
     text-align: center;
 }
-a{
-    color:white;
-    list-style: none;
-    text-decoration: none;
+h2{
+    font-weight: bold;
+    
+    display: inline-block;
+    margin: 0 auto ; /* This centers the element horizontally */
+    margin-bottom: 5px;
 }
+
+.section-spacing{
+    margin: 100px 0;
+
+}
+
+a{
+    list-style: none;
+    text-decoration: none;    
+}
+
 a:hover{
-    color: aqua;
+    color: lightblue;
 }
 
 
@@ -51,7 +75,11 @@ ul{
     padding: 0;
 }
 
-
+nav{
+    display: flex;
+    padding: 20px;
+    background-color: blueviolet;
+}
 .nav-links{
     margin:auto 0 auto auto;
 }
@@ -60,7 +88,7 @@ ul{
 }
 .link-item:hover,
 .link-item:active{
-    color: aqua;
+    color: lightblue;
 }
 
 
@@ -69,20 +97,15 @@ ul{
     
 }
 
-nav{
-    
-    display: flex;
-    text-align: center;
-    padding: 0;
-}
-/* ABOUT SECTION */
+
+/* ABOUT SECTION *******/
 #about-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin-bottom:100px;
 }
+
 .about-text-container{
     padding: 50px;
 }
@@ -97,27 +120,42 @@ nav{
     margin: 0;
 }
 .my-name{
-    color: aqua;
+    color: blueviolet;
     font-weight: 800;
-    text-align: center;
     display: inline;
 }
-hr{color: aqua;}
+hr{color: blueviolet;}
 
 .my-picture{
     width:300px;
     height: 300px;
     border-radius: 500px;
-    margin-top:30px;
+    margin:30px 0;
+}
+#my-passion{
+    font-weight: bold;
+    line-height:35px;
+    border-top: 5px blueviolet solid;
+    border-bottom: 5px blueviolet solid;
 }
 
+/* EXPERIENCE SECTION  **********/
 
-
-/* PROJECTS SECTION */
-#projects{
-    margin: 0;
+#experience-container{
+    text-align: center;
 }
+.experience-item{
+    margin:20px 0;
+}
+
+/* PROJECTS SECTION *********/
+
+.projects-header{
+    margin-bottom: 20px;
+}
+
 .main-project-container{
+    
     text-align: center;
     justify-content: center;
 }
@@ -148,16 +186,39 @@ hr{color: aqua;}
     align-items: center;
 }
 
-/* CONNECT SECTION  */
+#other-projects{
+    display: flex;
+    flex-direction: column;
+}
+/* SKILLS SECTION  **********/
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: "center";
+}
+
+#html-logo{
+    width: 100px;
+}
+#css-logo{
+    width: 120px;
+}
+#javascript-logo{
+    width: 100px;
+}
+
+/* CONNECT SECTION  ***********/
 #connect{
     margin:20px 0;
+    
 }
 
 .nav-container{
     text-align: center;
 }
 
-/* Animations */
+/* Animations *********/
 #slide-animation {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -188,25 +249,58 @@ hr{color: aqua;}
     padding: 10px;
     border:1px solid grey;
     border-radius:100px;
-    background-color: aqua;
+    background-color: blueviolet;
     margin: 10px 0;
+}
+#footer{
+    background-color:red;
+    margin: 0;
+    padding:20px 0;
+}
+
+/* DARK MODE STYLING **********/
+.fa-toggle-off{
+    color: white;
+    cursor: pointer;
+}
+.fa-toggle-on{
+    color: white;
+    cursor: pointer;
+    content: "lightmode";
+}
+.fa-toggle-on:hover{
+
+    content: "lightmode";
+}
+
+.light-text{
+    color: white !important;
+}
+.dark-text{
+    color: fuchsia;
+}
+
+#footer-dark{
+    background-color: purple !important;
+}
+#page-container-dark{
+    background-color: rgb(33, 31, 31);
+    color: black;
 }
 /***************************************************************** Tablet Styling **************************************************************/
 @media only screen and (max-width: 1300px) {
     body{
-        margin: 0 100px;
+        margin: 0;
     }
-    h2{
-        text-align: center;
-        
-    }
+
     a{
         color:white;
         list-style: none;
         text-decoration: none;
     }
+
     a:hover{
-        color: aqua;
+        color: blueviolet;
     }
     
 
@@ -218,24 +312,26 @@ hr{color: aqua;}
     
     
 
+    nav{
+        display: flex;
+        text-align: center;
+        padding: 20px;
+        background-color: blueviolet;
+    }
+    .nav-links{
+        margin:auto 0 auto auto;
+    }
     .link-item{
-       margin:20px 10px;
+       margin:30px 10px;
     }
     .link-item:hover,
     .link-item:active{
-        color: aqua;
+        color: lightblue;
     }
     
     
     .nav-link{
-        margin: 10px;
-    }
-    
-    nav{
-        display:inline-block;
-        justify-content: space-around;
-        width: 100%;
-        text-align: center;
+        margin: 0 auto;
         
     }
 
@@ -261,20 +357,20 @@ hr{color: aqua;}
         margin: 0;
     }
     .my-name{
-        color: aqua;
+        color:blueviolet;
         font-weight: 800;
         text-align: center;
         display: inline;
     }
     hr{
-        color: aqua;
+        color:blueviolet;
     }
     
     .my-picture{
         width:300px;
         height: 300px;
         border-radius: 500px;
-        margin-top:30px;
+        margin:30px 0;
     }
     
     
@@ -313,7 +409,8 @@ hr{color: aqua;}
     
     /* CONNECT SECTION  */
     #connect{
-        margin:20px 0;
+        margin:20px 0 0 0;
+        
     }
     
     .nav-container{
@@ -350,15 +447,18 @@ hr{color: aqua;}
         padding: 10px;
         border:1px solid grey;
         border-radius:100px;
-        background-color: aqua;
+        background-color:blueviolet;
         margin: 10px 0;
+    }
+    #footer{
+        background-color:blueviolet;
+        margin-top: 0;
     }
   }
 /***************************************************************** Mobile Styling **************************************************************/
 @media only screen and (max-width: 480px) {
     body {
-      background-color: #1C1B17;
-      margin: 0 100px;
+      margin: 0;
     }
 
     h2{
@@ -366,12 +466,12 @@ hr{color: aqua;}
         
     }
     a{
-        color:white;
+        color: white;
         list-style: none;
         text-decoration: none;
     }
     a:hover{
-        color: aqua;
+        color:lightblue;
     }
     
 
@@ -383,24 +483,27 @@ hr{color: aqua;}
     
     
 
+    nav{
+        display: flex;
+        text-align: center;
+        padding: 20px;
+        background-color: blueviolet;
+    }
+    .nav-links{
+        margin:auto 0 auto auto;
+    }
     .link-item{
-       margin:20px 10px;
+       margin:30px 10px;
     }
     .link-item:hover,
     .link-item:active{
-        color: aqua;
+        color: lightblue;
     }
     
     
     .nav-link{
-        display: block;
-    }
-    
-    nav{
-        display:inline-block;
-        justify-content: space-around;
-        width: 100%;
-        text-align: center;
+        margin: 0 auto;
+        
     }
 
     /* ABOUT SECTION */
@@ -425,13 +528,13 @@ hr{color: aqua;}
         margin: 0;
     }
     .my-name{
-        color: aqua;
+        color:blueviolet;
         font-weight: 800;
         text-align: center;
         display: inline;
     }
     hr{
-        color: aqua;
+        color:blueviolet;
         width: 80%;
         text-align: center;
     }
@@ -440,7 +543,7 @@ hr{color: aqua;}
         width:280px;
         height: 280px;
         border-radius: 500px;
-        margin-top:30px;
+        margin:30px 0;
     }
     
     
@@ -474,6 +577,7 @@ hr{color: aqua;}
     /* CONNECT SECTION  */
     #connect{
         margin:20px 0;
+
     }
     
     .nav-container{
@@ -483,7 +587,7 @@ hr{color: aqua;}
         padding: 10px;
         border:1px solid grey;
         border-radius:100px;
-        background-color: aqua;
+        background-color:blueviolet;
         margin: 10px 0;
     }
   }

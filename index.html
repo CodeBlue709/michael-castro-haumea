@@ -8,88 +8,113 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9315ea8199.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
+        <div id = "page-container" class= "dark-text">
+            <nav class="align-center">
+                <a class="nav-link light-text" href="#about-section">About</a>
+                <a class="nav-link light-text" href="#skills">Skills</a>
+                <a class="nav-link light-text" href="#projects">Projects</a>
+                <a class="nav-link light-text" href="#experience">Experience</a>
+                <a class="nav-link light-text" href="#connect">Connect</a>
+                <i id = "dark-mode-btn" class="fa-solid  fa-toggle-off "></i>
+            </nav>
             
-            <a class="nav-link" href="#about-section">About</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#connect">Connect</a>
-        </nav>
-        <hr>
 
-        <section id="about-section">
-            <div class="about-text-container">
-                <h1 class="hero-text">
-                    I am <br><span class="my-name">Michael Castro</span>
-                </h1>
-                <p class="about-description">Aspiring Web Developer.</p>
-                <img src="images/snowboarding-photo.jpg" class= "my-picture" alt="Image of Michael Castro Smiling in the snow, with a snow board in his hand" srcset="">
-            </div>
-        </section>
-        <hr>
+            <section id="about-section" class="align-center">
+                <div class="about-text-container">
+                    <h1 class="hero-text">
+                        I am <br><span class="my-name">Michael Castro</span>
+                    </h1>
+                    <p class ="about-description align-center">Aspiring Web Developer.</p>
+                    
+                    <img src="images/snowboarding-photo.jpg" class= "my-picture" alt="Image of Michael Castro Smiling in the snow, with a snow board in his hand" srcset="">
+                    <h3 id = "my-passion">
+                        I am passioante about the service I provide. Building beautiful <br>
+                        and interactive websites is one of my favorite things to do. I am <br>ready and willing
+                        to create something new to show off to the world.
+                    </h3>
+                </div>
+            </section>
+            <hr>
 
-        <section id="experience">
-            <h2>Experience</h2>
-        </section>
-        <hr>
-        <section id="projects">
-            <h2>Projects</h2>    
+            <section id="experience" class="section-spacing">
+                <div class="align-center"><h2 class="text-underline">Experience</h2></div>
+                <ul id="experience-container">
+                    <li class="experience-item"><h3>1 Year of web devleopment experience</h3></li>
+                    <li class="experience-item"><h3>Gardern project manegment</h3></li>
+                    <li class="experience-item"><h3>Maintenance Mechanic USPS</h3></li>
+                </ul>
+            </section>
 
-            <div class="main-project-container">
-                <a href="https://codeblue709.github.io/FetchMates/" target="_blank"><img src="images/FetchMates screenshot 2023-07-30 174123.png" id = "fetchmates"class ="project-img" alt="Picture of my wesbite called FetchMates"></a>
-            </div>
 
-            <div class="wrapper">
-                <div class="project-container">
-                    <a href="https://codeblue709.github.io/Garden-Website/" target="_blank"><img src="images/garden website screenshot.png" class ="project-img" alt="Picture of my gardening website called gardens" ></a>
+            <hr>
+            <section id="projects"  class="section-spacing ">
+                <div class="align-center projects-header"><h2>Projects</h2></div>    
+
+                <div class="main-project-container">
+                    <a href="https://codeblue709.github.io/FetchMates/" target="_blank"><img src="images/FetchMates screenshot 2023-07-30 174123.png" id = "fetchmates"class ="project-img" alt="Picture of my wesbite called FetchMates"></a>
                 </div>
 
-                <div class="project-container">
-                    <a href="https://codeblue709.github.io/scoreboard-project/" target="_blank"><img src="images/scoreboard.png"  class ="project-img" alt="Picture of my score board project" ></a>
+                <div class="wrapper">
+                    <div class="project-container">
+                        <a href="https://codeblue709.github.io/Garden-Website/" target="_blank"><img src="images/garden website screenshot.png" class ="project-img" alt="Picture of my gardening website called gardens" ></a>
+                    </div>
+
+                    <div class="project-container">
+                        <a href="https://codeblue709.github.io/scoreboard-project/" target="_blank"><img src="images/scoreboard.png"  class ="project-img" alt="Picture of my score board project" ></a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <hr>
+                <h3>Other Projects</h3>
+                <div id = "other-projects" class="align-center">
+                    
+                </div>
+            </section>
+            <hr>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul id = "skills-list">
-                
-            </ul>
-        </section>
-        <hr>
+            <section id="skills" class="section-spacing">
+                <div class="align-center"><h2 class="text-underline">Skills</h2></div>
+                <ul id = "skills-list">
+                    
+                </ul>
+            </section>
+            <hr>
 
-        <section >
-            <h2>Leave a Message</h2>
-            <form name="leave_message">
-                <label for="usersName">Your Name:</label><br>
-                <input type="text" id="usersName" name="usersName" required><br>
-    
-                <label for="usersEmail">Your Email:</label><br>
-                <input type="email" id="usersEmail" name="usersEmail" required><br>
-    
-                <label for="usersMessage">Message:</label><br>
-                <textarea id="usersMessage" name="usersMessage" rows = "5" cols="30"></textarea><br>
-    
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </section>
+            <section >
+                <div class="align-center"><h2 class="text-underline">Leave a Message</h2></div>
+                <form name="leave_message" class="align-center">
+                    <label for="usersName">Your Name:</label><br>
+                    <input type="text" id="usersName" name="usersName" required><br>
+        
+                    <label for="usersEmail">Your Email:</label><br>
+                    <input type="email" id="usersEmail" name="usersEmail" required><br>
+        
+                    <label for="usersMessage">Message:</label><br>
+                    <textarea id="usersMessage" name="usersMessage" rows = "5" cols="30"></textarea><br>
+        
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
 
-        <section id="messages">
-            <h1>Messages</h1>
-            <ul></ul>
-        </section>
-        <hr>
-        <section id="connect">
-            <h2>Connect</h2>
-            <div class="nav-container">
-                <a href="https://www.instagram.com/m1chael_castr0709/" class="link-item" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/michael-castro-52293a266/" class="link-item" target="_blank">LinkedIn</a>
-            </div>
-        </section>
+            <section id="messages" class="align-center">
+                <div class="align-center"><h2>Messages</h2></div>
+                <ul></ul>
+            </section>
+            <hr>
+            <section id="connect" class="section-spacing">
+                <div class="align-center"><h2>Connect</h2></div>
+                <div class="nav-container">
+                    <a href="https://www.instagram.com/m1chael_castr0709/" class="link-item dark-text" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/michael-castro-52293a266/" class="link-item dark-text" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/CodeBlue709" target="_blank" class="link-item dark-text" rel="noopener noreferrer">Github</a>
+                </div>
+            </section>
+            
+            <section id="footer" class="align-center">
+
+            </section>
+        </div>
         <script src="js/index.js"></script>
     </body>
 </html>
